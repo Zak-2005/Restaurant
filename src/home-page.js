@@ -1,20 +1,40 @@
+import {clicked, menu, clearPage} from "./index.js";
+import menuPage from "./menu";
+
 export default function homePage() {
+  const body = document.querySelector('body');
   const content = document.querySelector("#content");
   const homePage = document.createElement("div");
   homePage.classList.add('homePage')
 
-  const header = document.createElement("div");
-  header.textContent = "The Mobarak's cafe";
-  homePage.appendChild(header);
 
-  const pic = document.createElement("img");
-  pic.src = "../Pictures/mobarakCafe.jpg";
-  homePage.appendChild(pic);
+  const homeText = document.createElement("div");
+  homeText.classList.add('homeText');
+  const welcome = document.createElement("p");
+  welcome.classList.add('homeDesc')
+  welcome.textContent = "Welcome to Mobarak's Cafe!"
 
-  const description = document.createElement("p");
-  description.textContent =
-    "Mobarak's Cafe is a Middle Eastern restaurant that offers a taste of traditional cuisine with a modern twist. Located in the heart of a bustling city, the restaurant is known for its warm and inviting atmosphere, where customers can enjoy delicious food and great company. From rich and flavorful hummus to savory shawarma, Mobarak's Cafe's menu features a wide range of authentic Middle Eastern dishes that are sure to delight any palate. Whether you're looking for a quick bite or a full meal, Mobarak's Cafe is the perfect place to experience the flavors of the Middle East."
-  homePage.appendChild(description);
+  const welcomeSubText = document.createElement('p');
+  welcomeSubText.textContent = "Take a look at our delicious menu! Feel free to contact us if you have any questions!"
+  welcomeSubText.classList.add('homeDesc');
+  welcomeSubText.classList.add('subDesc');
+
+  const orderNow = document.createElement('button');
+  orderNow.classList.add('orderNow');
+  orderNow.textContent = 'Order Now!'
+  orderNow.addEventListener("click", () =>{
+    clearPage();
+    menuPage();
+    clicked(menu);
+  })
+
+  
+  homeText.appendChild(welcome);
+  homeText.appendChild(welcomeSubText);
+  
+
+  homePage.appendChild(homeText);
+  homePage.appendChild(orderNow);
   
   content.appendChild(homePage);
 }

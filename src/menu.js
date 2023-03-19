@@ -4,6 +4,7 @@ const menu = document.createElement("div");
 
   const header = document.createElement("div");
   header.textContent = "Menu";
+  header.classList.add('heading');
   menu.appendChild(header);
 
   const food1 = createFood(

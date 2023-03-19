@@ -4,6 +4,7 @@ export default function contactPage() {
   
     const header = document.createElement("div");
     header.textContent = "Contact Us";
+    header.classList.add('heading');
     contact.appendChild(header);
   
     const email = document.createElement("div");
