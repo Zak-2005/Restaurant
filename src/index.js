@@ -14,6 +14,11 @@ header.classList.add("mainHeading");
 const reserveNow = document.createElement("button");
 reserveNow.classList.add("reserve");
 reserveNow.textContent = "Reserve Now";
+reserveNow.addEventListener("click", () => {
+  clearPage();
+  contactPage();
+  clicked(contact);
+});
 header.appendChild(reserveNow);
 
 const tabs = document.createElement("div");

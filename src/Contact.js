@@ -2,6 +2,9 @@ export default function contactPage() {
     const content = document.querySelector("#content");
     const contact = document.createElement("div");
   
+    const body = document.querySelector('body');
+    body.style.backgroundImage = "url(../Pictures/woodBackground.jpg)"
+
     const header = document.createElement("div");
     header.textContent = "Contact Us";
     header.classList.add('heading');
