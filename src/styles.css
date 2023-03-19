@@ -9,15 +9,19 @@ body {
   height: 100vh;
   background-size: cover;
   background-position: center;
-  background-repeat: no-repeat;
   position: relative;
-  background-image: url(../Pictures/mobarakCafe.jpg);
+
 }
 
-button{
-    margin: 0;
-    padding: 0;
-    border: none;
+img {
+    height: auto;
+    width: 50%;
+}
+
+button {
+  margin: 0;
+  padding: 0;
+  border: none;
 }
 
 .homePage {
@@ -28,6 +32,15 @@ button{
   align-items: center;
   justify-content: center;
 }
+
+.menuPage {
+  display: grid;
+  grid-template-columns: 1fr;
+  justify-items: center;
+  background-color: rgb(0, 0, 0, 0.7);
+  gap: 30px;
+}
+
 
 .mainHeading {
   grid-row: 1;
@@ -47,6 +60,15 @@ button{
   left: 0;
 }
 
+.heading {
+  color: white;
+  border-bottom: 3px solid white;
+  margin-top: 1rem;
+  font-weight: bold;
+  padding-bottom: 10px;
+  font-size: 80px;
+}
+
 .tabs {
   display: flex;
   gap: 10px;
@@ -61,8 +83,8 @@ button{
   justify-self: start;
 }
 
-.restName:hover{
-    cursor: pointer;
+.restName:hover {
+  cursor: pointer;
 }
 
 .reserve {
@@ -78,19 +100,18 @@ button{
   margin-right: 10px;
 }
 
-.homeText{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    padding-bottom: 6rem;
-    width: 50%;
+.homeText {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding-bottom: 6rem;
+  width: 50%;
 }
 
-.homeText > *{
-    margin: 0px; 
+.homeText > * {
+  margin: 0px;
 }
-
 
 .homeDesc {
   color: rgb(255, 165, 165);
@@ -106,31 +127,30 @@ button{
   grid-row: 1;
 }
 
-
-.subDesc{
-    font-size: 20px;
-    grid-row: 2;
+.subDesc {
+  font-size: 20px;
+  grid-row: 2;
 }
 
-.orderNow{
-    padding: 20px;
-    height: auto;
-    width: 10%;
-    border-radius: 8px;
-    background-color: transparent;
-    border: 1px solid white;
-    color: white;
+.orderNow {
+  padding: 20px;
+  height: auto;
+  width: 10%;
+  border-radius: 8px;
+  background-color: transparent;
+  border: 1px solid white;
+  color: white;
 }
 
-.orderNow:hover, .reserve:hover{
-    background-color: rgb(255, 126, 126);
-    border-color: rgb(0, 0, 0, 0.7);
-    color:rgb(0, 0, 0, 0.7);
-    cursor: pointer;
+.orderNow:hover,
+.reserve:hover {
+  background-color: rgb(255, 126, 126);
+  border-color: rgb(0, 0, 0, 0.7);
+  color: rgb(0, 0, 0, 0.7);
+  cursor: pointer;
 }
 
 .tabs > * {
-    
 }
 
 .tabs > *:hover {
@@ -142,11 +162,18 @@ button{
   border-bottom: 1px solid black;
 }
 
-.heading {
-  font-size: x-large;
+.food{
+    height: auto;
+    width: 25%;
+    color: white;
+    border: 1px solid white;
+    border-radius: 8px;
+    background-color: rgb(0, 0, 0, .7);
+    padding: 10px;
+    font-weight: bold;
+    display: flex;
+    flex-direction: column;
 }
-
-img {
-  height: auto;
-  width: 100%;
+.food>*{
+    padding: 10px;
 }
