@@ -28,6 +28,10 @@ export default function contactPage() {
     phone.textContent = 'Phone Number: 999-999-9999'
     contactContent.appendChild(phone);
 
+    const address = document.createElement("div");
+    address.textContent = 'Address: 123456 Main St Anytown, USA 12345'
+    contactContent.appendChild(address);
+
     contact.appendChild(contactContent);
     content.appendChild(contact);
   }

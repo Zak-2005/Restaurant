@@ -205,4 +205,5 @@ button {
   font-weight: bold;
   padding: 10px;
   gap: 20%;
+  border-radius: 15px;
 }
