@@ -166,9 +166,6 @@ button {
   cursor: pointer;
 }
 
-.tabs > * {
-}
-
 .tabs > *:hover {
   background-color: rgb(255, 126, 126);
   cursor: pointer;
