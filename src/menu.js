@@ -4,7 +4,7 @@ export default function menuPage() {
   menu.classList.add('menuPage');
 
   const body = document.querySelector('body');
-  body.style.backgroundImage = "url(../Pictures/woodBackground.jpg)";
+  body.style.backgroundImage = "url(./Pictures/woodBackground.jpg)";
 
   const header = document.createElement("div");
   header.textContent = "Menu";
@@ -15,14 +15,14 @@ export default function menuPage() {
     "Chicken Shawarma",
     "Crispy, Juicy, Full of Flavor! The Chicken Shawarma is made with a tangy garlic sauce, crispy french fries, tomatoes, pickles, and the best chicken you've ever had!",
     "$12",
-    "../Pictures/ChickenShawarma.jpg"
+    "./Pictures/ChickenShawarma.jpg"
   );
   menu.appendChild(food1);
   const food2 = createFood(
     "Tabouleh",
     "The salad is made with fresh parsley, bulgur wheat, diced tomatoes, chopped onions, and seasoned with olive oil, lemon juice, and salt.",
     "$9",
-    "../Pictures/tabbouleh-salad.jpg"
+    "./Pictures/tabbouleh-salad.jpg"
   );
   menu.appendChild(food2);
 
@@ -30,7 +30,7 @@ export default function menuPage() {
     "Kibbeh",
     "made of ground beef, mixed with bulgur wheat, onions, and spices, and shaped into small squares. The mixture is either fried or baked until it is golden brown and crispy on the outside, while still moist and tender on the inside.",
     "$13",
-    "../Pictures/kibbeh.jpg"
+    "./Pictures/kibbeh.jpg"
   );
   menu.appendChild(food3);
 
@@ -38,7 +38,7 @@ export default function menuPage() {
     "Hummus",
     "Made from chickpeas, tahini, olive oil, and a variety of spices, hummus is not only packed with protein and fiber, but it also has a deliciously creamy and savory taste that is perfect for any occasion.",
     "$8",
-    "../Pictures/hummus.jpg"
+    "./Pictures/hummus.jpg"
   );
   menu.appendChild(food4);
 
