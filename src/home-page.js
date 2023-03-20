@@ -7,7 +7,7 @@ export default function homePage() {
   const homePage = document.createElement("div");
   homePage.classList.add('homePage')
 
-  body.style.backgroundImage = "url(./Pictures/mobarakCafe.jpg)";
+  body.style.backgroundImage = "url(../Pictures/mobarakCafe.jpg)";
 
 
   const homeText = document.createElement("div");

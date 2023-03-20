@@ -7,7 +7,7 @@ export default function contactPage() {
 
     contact.classList.add('contactPage')
     const body = document.querySelector('body');
-    body.style.backgroundImage = "url(./Pictures/woodBackground.jpg)"
+    body.style.backgroundImage = "url(../Pictures/woodBackground.jpg)"
 
 
     const header = document.createElement("div");
